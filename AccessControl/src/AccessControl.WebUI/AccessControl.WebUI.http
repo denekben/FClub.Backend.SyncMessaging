@@ -1,0 +1,6 @@
+@AccessControl.WebUI_HostAddress = http://localhost:5276
+
+GET {{AccessControl.WebUI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
