@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9C69F911-08D8-4B10-8731-4DEC9ADA045C}|Management\\src\\Management.Domain\\Management.Domain.csproj|c:\\users\\kurbanaev\\desktop\\fclub\\fclub\\management\\src\\management.domain\\entities\\userlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C69F911-08D8-4B10-8731-4DEC9ADA045C}|Management\\src\\Management.Domain\\Management.Domain.csproj|solutionrelative:management\\src\\management.domain\\entities\\userlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D051846-F12C-4D90-9D76-F28AB8FE6AE6}|AccessControl\\src\\AccessControl.Domain\\AccessControl.Domain.csproj|c:\\users\\kurbanaev\\desktop\\fclub\\fclub\\accesscontrol\\src\\accesscontrol.domain\\entities\\entrylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D051846-F12C-4D90-9D76-F28AB8FE6AE6}|AccessControl\\src\\AccessControl.Domain\\AccessControl.Domain.csproj|solutionrelative:accesscontrol\\src\\accesscontrol.domain\\entities\\entrylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D051846-F12C-4D90-9D76-F28AB8FE6AE6}|AccessControl\\src\\AccessControl.Domain\\AccessControl.Domain.csproj|c:\\users\\kurbanaev\\desktop\\fclub\\fclub\\accesscontrol\\src\\accesscontrol.domain\\entities\\turnstile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D051846-F12C-4D90-9D76-F28AB8FE6AE6}|AccessControl\\src\\AccessControl.Domain\\AccessControl.Domain.csproj|solutionrelative:accesscontrol\\src\\accesscontrol.domain\\entities\\turnstile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{589B311F-E241-44D6-9EA1-9D112C9E42DA}|Notifications\\src\\Notifications.Application\\Notifications.Application.csproj|c:\\users\\kurbanaev\\desktop\\fclub\\fclub\\notifications\\src\\notifications.application\\usecases\\notifications\\queries\\getsentnotifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{589B311F-E241-44D6-9EA1-9D112C9E42DA}|Notifications\\src\\Notifications.Application\\Notifications.Application.csproj|solutionrelative:notifications\\src\\notifications.application\\usecases\\notifications\\queries\\getsentnotifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -251,6 +263,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UserLog.cs",
+              "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Domain\\Entities\\UserLog.cs",
+              "RelativeDocumentMoniker": "Management\\src\\Management.Domain\\Entities\\UserLog.cs",
+              "ToolTip": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Domain\\Entities\\UserLog.cs",
+              "RelativeToolTip": "Management\\src\\Management.Domain\\Entities\\UserLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T18:12:14.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EntryLog.cs",
+              "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\AccessControl\\src\\AccessControl.Domain\\Entities\\EntryLog.cs",
+              "RelativeDocumentMoniker": "AccessControl\\src\\AccessControl.Domain\\Entities\\EntryLog.cs",
+              "ToolTip": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\AccessControl\\src\\AccessControl.Domain\\Entities\\EntryLog.cs",
+              "RelativeToolTip": "AccessControl\\src\\AccessControl.Domain\\Entities\\EntryLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T18:11:48.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Turnstile.cs",
+              "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\AccessControl\\src\\AccessControl.Domain\\Entities\\Turnstile.cs",
+              "RelativeDocumentMoniker": "AccessControl\\src\\AccessControl.Domain\\Entities\\Turnstile.cs",
+              "ToolTip": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\AccessControl\\src\\AccessControl.Domain\\Entities\\Turnstile.cs",
+              "RelativeToolTip": "AccessControl\\src\\AccessControl.Domain\\Entities\\Turnstile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T18:11:36.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "GetSentNotifications.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Notifications\\src\\Notifications.Application\\UseCases\\Notifications\\Queries\\GetSentNotifications.cs",
               "RelativeDocumentMoniker": "Notifications\\src\\Notifications.Application\\UseCases\\Notifications\\Queries\\GetSentNotifications.cs",
@@ -263,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "SendNotification.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Notifications\\src\\Notifications.Application\\UseCases\\Notifications\\Commands\\SendNotification.cs",
               "RelativeDocumentMoniker": "Notifications\\src\\Notifications.Application\\UseCases\\Notifications\\Commands\\SendNotification.cs",
@@ -271,12 +322,11 @@
               "RelativeToolTip": "Notifications\\src\\Notifications.Application\\UseCases\\Notifications\\Commands\\SendNotification.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:47:18.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:47:18.39Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ChangeNotificationsSettings.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Notifications\\src\\Notifications.Application\\UseCases\\Notifications\\Commands\\ChangeNotificationsSettings.cs",
               "RelativeDocumentMoniker": "Notifications\\src\\Notifications.Application\\UseCases\\Notifications\\Commands\\ChangeNotificationsSettings.cs",
@@ -284,12 +334,11 @@
               "RelativeToolTip": "Notifications\\src\\Notifications.Application\\UseCases\\Notifications\\Commands\\ChangeNotificationsSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:46:52.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:46:52.908Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "GetTariffs.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Tariffs\\Queries\\GetTariffs.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Tariffs\\Queries\\GetTariffs.cs",
@@ -297,12 +346,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Tariffs\\Queries\\GetTariffs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:42:02.592Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:42:02.592Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "DeleteTariff.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Tariffs\\Commands\\DeleteTariff.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Tariffs\\Commands\\DeleteTariff.cs",
@@ -310,12 +358,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Tariffs\\Commands\\DeleteTariff.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:41:40.293Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:41:40.293Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "UpdateTariff.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Tariffs\\Commands\\UpdateTariff.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Tariffs\\Commands\\UpdateTariff.cs",
@@ -323,12 +370,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Tariffs\\Commands\\UpdateTariff.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:41:29.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:41:29.624Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "CreateTariff.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Tariffs\\Commands\\CreateTariff.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Tariffs\\Commands\\CreateTariff.cs",
@@ -336,12 +382,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Tariffs\\Commands\\CreateTariff.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:41:21.864Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:41:21.864Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "GetSocialGroups.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\SocialGroups\\Queries\\GetSocialGroups.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\SocialGroups\\Queries\\GetSocialGroups.cs",
@@ -349,12 +394,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\SocialGroups\\Queries\\GetSocialGroups.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:40:51.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:40:51.344Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "DeleteSocialGroup.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\SocialGroups\\Commands\\DeleteSocialGroup.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\SocialGroups\\Commands\\DeleteSocialGroup.cs",
@@ -362,12 +406,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\SocialGroups\\Commands\\DeleteSocialGroup.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:40:25.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:40:25.712Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "UpdateSocialGroup.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\SocialGroups\\Commands\\UpdateSocialGroup.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\SocialGroups\\Commands\\UpdateSocialGroup.cs",
@@ -375,12 +418,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\SocialGroups\\Commands\\UpdateSocialGroup.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:40:15.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:40:15.254Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "CreateSocialGroup.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\SocialGroups\\Commands\\CreateSocialGroup.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\SocialGroups\\Commands\\CreateSocialGroup.cs",
@@ -388,12 +430,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\SocialGroups\\Commands\\CreateSocialGroup.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:40:05.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:40:05.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "DeleteService.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Services\\Commands\\DeleteService.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Services\\Commands\\DeleteService.cs",
@@ -401,12 +442,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Services\\Commands\\DeleteService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:39:34.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:39:34.476Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "UpdateMembership.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Memberships\\Commands\\UpdateMembership.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Memberships\\Commands\\UpdateMembership.cs",
@@ -414,12 +454,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Memberships\\Commands\\UpdateMembership.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:38:48.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:38:48.366Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "DeleteMembership.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Memberships\\Commands\\DeleteMembership.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Memberships\\Commands\\DeleteMembership.cs",
@@ -427,12 +466,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Memberships\\Commands\\DeleteMembership.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:38:13.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:38:13.179Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "CreateMembership.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Memberships\\Commands\\CreateMembership.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Memberships\\Commands\\CreateMembership.cs",
@@ -440,12 +478,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Memberships\\Commands\\CreateMembership.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:37:23.812Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:37:23.812Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "DeleteClient.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Clients\\Commands\\DeleteClient.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Clients\\Commands\\DeleteClient.cs",
@@ -453,12 +490,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Clients\\Commands\\DeleteClient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:35:21.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:35:21.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "UpdateClient.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Clients\\Commands\\UpdateClient.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Clients\\Commands\\UpdateClient.cs",
@@ -466,12 +502,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Clients\\Commands\\UpdateClient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:35:13.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:35:13.82Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "CreateClient.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Clients\\Commands\\CreateClient.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Clients\\Commands\\CreateClient.cs",
@@ -479,12 +514,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Clients\\Commands\\CreateClient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:35:05.592Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:35:05.592Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "GoThrough.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\AccessControl\\src\\AccessControl.Application\\UseCases\\Turnstile\\Commands\\GoThrough.cs",
               "RelativeDocumentMoniker": "AccessControl\\src\\AccessControl.Application\\UseCases\\Turnstile\\Commands\\GoThrough.cs",
@@ -492,12 +526,11 @@
               "RelativeToolTip": "AccessControl\\src\\AccessControl.Application\\UseCases\\Turnstile\\Commands\\GoThrough.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:31:00.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:31:00.738Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "UpdateTurnstile.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\AccessControl\\src\\AccessControl.Application\\UseCases\\Turnstile\\Commands\\UpdateTurnstile.cs",
               "RelativeDocumentMoniker": "AccessControl\\src\\AccessControl.Application\\UseCases\\Turnstile\\Commands\\UpdateTurnstile.cs",
@@ -505,12 +538,11 @@
               "RelativeToolTip": "AccessControl\\src\\AccessControl.Application\\UseCases\\Turnstile\\Commands\\UpdateTurnstile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:28:59.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:28:59.033Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "DeleteTurnstile.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\AccessControl\\src\\AccessControl.Application\\UseCases\\Turnstile\\Commands\\DeleteTurnstile.cs",
               "RelativeDocumentMoniker": "AccessControl\\src\\AccessControl.Application\\UseCases\\Turnstile\\Commands\\DeleteTurnstile.cs",
@@ -518,12 +550,11 @@
               "RelativeToolTip": "AccessControl\\src\\AccessControl.Application\\UseCases\\Turnstile\\Commands\\DeleteTurnstile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:28:44.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:28:44.546Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "GetTurnstiles.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\AccessControl\\src\\AccessControl.Application\\UseCases\\Turnstile\\Queries\\GetTurnstiles.cs",
               "RelativeDocumentMoniker": "AccessControl\\src\\AccessControl.Application\\UseCases\\Turnstile\\Queries\\GetTurnstiles.cs",
@@ -531,12 +562,11 @@
               "RelativeToolTip": "AccessControl\\src\\AccessControl.Application\\UseCases\\Turnstile\\Queries\\GetTurnstiles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:27:13.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:27:13.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "CreateTurnstile.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\AccessControl\\src\\AccessControl.Application\\UseCases\\Turnstile\\Commands\\CreateTurnstile.cs",
               "RelativeDocumentMoniker": "AccessControl\\src\\AccessControl.Application\\UseCases\\Turnstile\\Commands\\CreateTurnstile.cs",
@@ -544,12 +574,11 @@
               "RelativeToolTip": "AccessControl\\src\\AccessControl.Application\\UseCases\\Turnstile\\Commands\\CreateTurnstile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:26:50.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:26:50.821Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "GetLogsByClientId.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\AccessControl\\src\\AccessControl.Application\\UseCases\\EntryLogs\\Queries\\GetLogsByClientId.cs",
               "RelativeDocumentMoniker": "AccessControl\\src\\AccessControl.Application\\UseCases\\EntryLogs\\Queries\\GetLogsByClientId.cs",
@@ -557,12 +586,11 @@
               "RelativeToolTip": "AccessControl\\src\\AccessControl.Application\\UseCases\\EntryLogs\\Queries\\GetLogsByClientId.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:13:26.791Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:13:26.791Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "GetLogs.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\AccessControl\\src\\AccessControl.Application\\UseCases\\EntryLogs\\Queries\\GetLogs.cs",
               "RelativeDocumentMoniker": "AccessControl\\src\\AccessControl.Application\\UseCases\\EntryLogs\\Queries\\GetLogs.cs",
@@ -570,12 +598,11 @@
               "RelativeToolTip": "AccessControl\\src\\AccessControl.Application\\UseCases\\EntryLogs\\Queries\\GetLogs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:13:00.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:13:00.912Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "GetClients.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Clients\\Queries\\GetClients.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Clients\\Queries\\GetClients.cs",
@@ -583,12 +610,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Clients\\Queries\\GetClients.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:08:19.133Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:08:19.133Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "UpdateService.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Services\\Commands\\UpdateService.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Services\\Commands\\UpdateService.cs",
@@ -596,12 +622,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Services\\Commands\\UpdateService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:03:34.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:03:34.83Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "CreateService.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Services\\Commands\\CreateService.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Services\\Commands\\CreateService.cs",
@@ -609,12 +634,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Services\\Commands\\CreateService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:03:20.689Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T17:03:20.689Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "GetServices.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Services\\Queries\\GetServices.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Services\\Queries\\GetServices.cs",
@@ -622,12 +646,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Services\\Queries\\GetServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:59:55.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T16:59:55.56Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "DeleteBranch.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Branches\\Commands\\DeleteBranch.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Branches\\Commands\\DeleteBranch.cs",
@@ -635,12 +658,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Branches\\Commands\\DeleteBranch.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:58:40.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T16:58:40.328Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "UpdateBranch.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Branches\\Commands\\UpdateBranch.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Branches\\Commands\\UpdateBranch.cs",
@@ -648,12 +670,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Branches\\Commands\\UpdateBranch.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:58:09.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T16:58:09.776Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "AppUser.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Domain\\Entities\\AppUser.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Domain\\Entities\\AppUser.cs",
@@ -661,12 +682,11 @@
               "RelativeToolTip": "Management\\src\\Management.Domain\\Entities\\AppUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:05:24.95Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:05:24.95Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Domain\\Entities\\Client.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Domain\\Entities\\Client.cs",
@@ -674,12 +694,11 @@
               "RelativeToolTip": "Management\\src\\Management.Domain\\Entities\\Client.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T19:52:16.229Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T19:52:16.229Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "GetBranches.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Branches\\Queries\\GetBranches.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Branches\\Queries\\GetBranches.cs",
@@ -687,12 +706,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Branches\\Queries\\GetBranches.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:56:09.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T16:56:09.601Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "GetBranch.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Branches\\Queries\\GetBranch.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Branches\\Queries\\GetBranch.cs",
@@ -700,12 +718,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Branches\\Queries\\GetBranch.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:56:00.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T16:56:00.8Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "CreateBranch.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\Branches\\Commands\\CreateBranch.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\Branches\\Commands\\CreateBranch.cs",
@@ -713,12 +730,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\Branches\\Commands\\CreateBranch.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:55:17.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T16:55:17.159Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "AssignUserToRole.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\AppUsers\\Commands\\AssignUserToRole.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\AppUsers\\Commands\\AssignUserToRole.cs",
@@ -726,12 +742,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\AppUsers\\Commands\\AssignUserToRole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:54:07.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T16:54:07.412Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "GetLogs.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\UserLogs\\Queries\\GetLogs.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\UserLogs\\Queries\\GetLogs.cs",
@@ -739,12 +754,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\UserLogs\\Queries\\GetLogs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:51:56.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T16:51:56.489Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "GetCurrentUserLogs.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\UserLogs\\Queries\\GetCurrentUserLogs.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\UserLogs\\Queries\\GetCurrentUserLogs.cs",
@@ -752,12 +766,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\UserLogs\\Queries\\GetCurrentUserLogs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:51:16.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T16:51:16.629Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "GetLogsByUserId.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\UserLogs\\Queries\\GetLogsByUserId.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\UserLogs\\Queries\\GetLogsByUserId.cs",
@@ -765,12 +778,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\UserLogs\\Queries\\GetLogsByUserId.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:48:48.134Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T16:48:48.134Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "GetUsers.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\AppUsers\\Queries\\GetUsers.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\AppUsers\\Queries\\GetUsers.cs",
@@ -778,12 +790,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\AppUsers\\Queries\\GetUsers.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:31:30.869Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T16:31:30.869Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "GetUser.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\AppUsers\\Queries\\GetUser.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\AppUsers\\Queries\\GetUser.cs",
@@ -791,12 +802,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\AppUsers\\Queries\\GetUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:30:57.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T16:30:57.158Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "GetCurrentUser.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\AppUsers\\Queries\\GetCurrentUser.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\AppUsers\\Queries\\GetCurrentUser.cs",
@@ -804,12 +814,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\AppUsers\\Queries\\GetCurrentUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:30:34.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T16:30:34.961Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "RefreshExpiredToken.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\AppUsers\\Commands\\RefreshExpiredToken.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\AppUsers\\Commands\\RefreshExpiredToken.cs",
@@ -817,12 +826,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\AppUsers\\Commands\\RefreshExpiredToken.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:29:55.998Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T16:29:55.998Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 47,
               "Title": "SignIn.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\AppUsers\\Commands\\SignIn.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\AppUsers\\Commands\\SignIn.cs",
@@ -830,12 +838,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\AppUsers\\Commands\\SignIn.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:28:44.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T16:28:44.77Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 48,
               "Title": "RegisterNewUser.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Application\\UseCases\\AppUsers\\Commands\\RegisterNewUser.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Application\\UseCases\\AppUsers\\Commands\\RegisterNewUser.cs",
@@ -843,12 +850,11 @@
               "RelativeToolTip": "Management\\src\\Management.Application\\UseCases\\AppUsers\\Commands\\RegisterNewUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:28:36.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T16:28:36.385Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 55,
               "Title": "Membership.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Domain\\Entities\\Membership.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Domain\\Entities\\Membership.cs",
@@ -856,12 +862,11 @@
               "RelativeToolTip": "Management\\src\\Management.Domain\\Entities\\Membership.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAowBwAAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T18:46:52.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T18:46:52.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 56,
               "Title": "Branch.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Domain\\Entities\\Branch.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Domain\\Entities\\Branch.cs",
@@ -869,12 +874,11 @@
               "RelativeToolTip": "Management\\src\\Management.Domain\\Entities\\Branch.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAA1wBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T20:31:42.551Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T20:31:42.551Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 54,
               "Title": "Service.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Domain\\Entities\\Service.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Domain\\Entities\\Service.cs",
@@ -882,12 +886,11 @@
               "RelativeToolTip": "Management\\src\\Management.Domain\\Entities\\Service.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwAkAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T10:42:10.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T10:42:10.406Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 58,
               "Title": "ServiceBranch.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Domain\\Entities\\Pivots\\ServiceBranch.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Domain\\Entities\\Pivots\\ServiceBranch.cs",
@@ -895,12 +898,11 @@
               "RelativeToolTip": "Management\\src\\Management.Domain\\Entities\\Pivots\\ServiceBranch.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T13:16:22.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T13:16:22.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 53,
               "Title": "SocialGroup.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Domain\\Entities\\SocialGroup.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Domain\\Entities\\SocialGroup.cs",
@@ -908,12 +910,11 @@
               "RelativeToolTip": "Management\\src\\Management.Domain\\Entities\\SocialGroup.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T14:09:48.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T14:09:48.658Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 52,
               "Title": "Tariff.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Domain\\Entities\\Tariff.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Domain\\Entities\\Tariff.cs",
@@ -921,12 +922,11 @@
               "RelativeToolTip": "Management\\src\\Management.Domain\\Entities\\Tariff.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAzwAsAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:26:10.849Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:26:10.849Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 49,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Domain\\Entities\\Role.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Domain\\Entities\\Role.cs",
@@ -934,12 +934,11 @@
               "RelativeToolTip": "Management\\src\\Management.Domain\\Entities\\Role.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:16:12.217Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:16:12.217Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 57,
               "Title": "ServiceTariff.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Domain\\Entities\\Pivots\\ServiceTariff.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Domain\\Entities\\Pivots\\ServiceTariff.cs",
@@ -947,12 +946,11 @@
               "RelativeToolTip": "Management\\src\\Management.Domain\\Entities\\Pivots\\ServiceTariff.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T18:53:53.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T18:53:53.415Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 50,
               "Title": "Seed.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Infrastructure\\Data\\Seed.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Infrastructure\\Data\\Seed.cs",
@@ -960,12 +958,11 @@
               "RelativeToolTip": "Management\\src\\Management.Infrastructure\\Data\\Seed.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T19:07:08.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T19:07:08.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 51,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Infrastructure\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Infrastructure\\Data\\AppDbContext.cs",
@@ -973,12 +970,11 @@
               "RelativeToolTip": "Management\\src\\Management.Infrastructure\\Data\\AppDbContext.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAwwBEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T19:31:28.906Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T19:31:28.906Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 59,
               "Title": "Address.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Domain\\ValueObjects\\Address.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Domain\\ValueObjects\\Address.cs",
@@ -986,12 +982,11 @@
               "RelativeToolTip": "Management\\src\\Management.Domain\\ValueObjects\\Address.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T10:46:55.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T10:46:55.693Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 60,
               "Title": "FullName.cs",
               "DocumentMoniker": "C:\\Users\\Kurbanaev\\Desktop\\FClub\\FClub\\Management\\src\\Management.Domain\\ValueObjects\\FullName.cs",
               "RelativeDocumentMoniker": "Management\\src\\Management.Domain\\ValueObjects\\FullName.cs",
