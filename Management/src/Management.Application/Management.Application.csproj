@@ -6,4 +6,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="UseCases\AppUsers\Commands\Handlers\" />
+    <Folder Include="UseCases\Branches\Commands\Handlers\" />
+    <Folder Include="UseCases\Clients\Commands\Handlers\" />
+    <Folder Include="UseCases\Memberships\Commands\Handlers\" />
+    <Folder Include="UseCases\Memberships\Queries\" />
+    <Folder Include="UseCases\Services\Commands\Handlers\" />
+    <Folder Include="UseCases\SocialGroups\Commands\Handlers\" />
+    <Folder Include="UseCases\Tariffs\Commands\Handler\" />
+  </ItemGroup>
+
 </Project>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AccessControl.WebUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd48377387809aaae659a378d22ef25ff39995e7")]
 [assembly: System.Reflection.AssemblyProductAttribute("AccessControl.WebUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AccessControl.WebUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
