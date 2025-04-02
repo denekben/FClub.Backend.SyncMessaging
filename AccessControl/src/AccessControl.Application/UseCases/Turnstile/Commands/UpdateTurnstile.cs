@@ -1,6 +1,6 @@
-﻿namespace AccessControl.Application.UseCases.Turnstile.Commands
+﻿using MediatR;
+
+namespace AccessControl.Application.UseCases.Turnstile.Commands
 {
-    class UpdateTurnstile
-    {
-    }
+    public sealed record UpdateTurnstile : IRequest;
 }

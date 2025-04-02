@@ -1,6 +1,6 @@
-﻿namespace Management.Application.UseCases.UserLogs.Queries
+﻿using MediatR;
+
+namespace Management.Application.UseCases.UserLogs.Queries
 {
-    class GetLogsByUserId
-    {
-    }
+    public sealed record GetLogsByUserId : IRequest;
 }

@@ -1,4 +1,6 @@
-﻿namespace Management.Domain.Entities.Pivots
+﻿using FClub.Backend.Common.Exceptions;
+
+namespace Management.Domain.Entities.Pivots
 {
     public sealed class ServiceTariff
     {
@@ -17,13 +19,13 @@
             TariffId = tarrifId;
         }
 
-        public static ServiceTariff Create(Guid serviceId, Guid tarrifId)
+        public static ServiceTariff Create(Guid serviceId, Guid tariffId)
         {
             if (serviceId == Guid.Empty)
                 throw new DomainException($"Invalid value for ServiceTariff[serviceId]. Entered value {serviceId}");
-            if (tarrifId == Guid.Empty)
-                throw new DomainException($"Invalid value for ServiceTariff[tarrifId]. Entered value {tarrifId}");
-            return new(serviceId, tarrifId);
+            if (tariffId == Guid.Empty)
+                throw new DomainException($"Invalid value for ServiceTariff[tariffId]. Entered value {tariffId}");
+            return new(serviceId, tariffId);
         }
     }
 }

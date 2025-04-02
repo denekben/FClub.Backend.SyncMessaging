@@ -1,5 +1,5 @@
-﻿using Management.Domain.Entities.Pivots;
-using Management.Domain.ValueObjects;
+﻿using FClub.Backend.Common.ValueObjects;
+using Management.Domain.Entities.Pivots;
 
 namespace Management.Domain.Entities
 {

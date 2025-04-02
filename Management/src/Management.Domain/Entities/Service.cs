@@ -1,4 +1,5 @@
-﻿using Management.Domain.Entities.Pivots;
+﻿using FClub.Backend.Common.Exceptions;
+using Management.Domain.Entities.Pivots;
 
 namespace Management.Domain.Entities
 {

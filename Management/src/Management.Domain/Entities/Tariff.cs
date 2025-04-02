@@ -1,4 +1,5 @@
-﻿using Management.Domain.Entities.Pivots;
+﻿using FClub.Backend.Common.Exceptions;
+using Management.Domain.Entities.Pivots;
 
 namespace Management.Domain.Entities
 {
@@ -8,6 +9,7 @@ namespace Management.Domain.Entities
         public string Name { get; private set; }
         public Dictionary<int, int> PriceForNMonths { get; private set; } = [];
         public Dictionary<Guid, int>? DiscountForSocialGroup { get; private set; } = [];
+        public bool AllowMultiBranches { get; private set; }
         public List<ServiceTariff> ServiceTariffs { get; private set; } = [];
         public List<Membership> Memberships { get; private set; } = [];
 
@@ -16,16 +18,17 @@ namespace Management.Domain.Entities
 
         private Tariff() { }
 
-        private Tariff(string name, Dictionary<int, int> priceForNMonths, Dictionary<Guid, int>? discountForSocialGroup)
+        private Tariff(string name, Dictionary<int, int> priceForNMonths, Dictionary<Guid, int>? discountForSocialGroup, bool allowMultiBranches)
         {
             Id = Guid.NewGuid();
             Name = name;
             PriceForNMonths = priceForNMonths;
             DiscountForSocialGroup = discountForSocialGroup;
             CreatedDate = DateTime.UtcNow;
+            AllowMultiBranches = allowMultiBranches;
         }
 
-        public static Tariff Create(string name, Dictionary<int, int> priceForNMonths, Dictionary<Guid, int>? discountForSocialGroup)
+        public static Tariff Create(string name, Dictionary<int, int> priceForNMonths, Dictionary<Guid, int>? discountForSocialGroup, bool allowMultiBranches)
         {
             if (string.IsNullOrWhiteSpace(name))
                 throw new DomainException($"Invalid argument for Tariff[name]. Entered value: {name}");
@@ -34,7 +37,7 @@ namespace Management.Domain.Entities
             if (discountForSocialGroup?.Any(x => x.Key == default || x.Value < 0) == true)
                 throw new DomainException($"Invalid argument for Tariff[discountForSocialGroup]. Entered value: {discountForSocialGroup}");
 
-            return new(name, priceForNMonths, discountForSocialGroup);
+            return new(name, priceForNMonths, discountForSocialGroup, allowMultiBranches);
         }
     }
 }

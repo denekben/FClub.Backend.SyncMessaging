@@ -1,4 +1,6 @@
-﻿namespace Management.Domain.Entities
+﻿using FClub.Backend.Common.Exceptions;
+
+namespace Management.Domain.Entities
 {
     public sealed class Role
     {
@@ -24,9 +26,7 @@
         public Role Create(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
-            {
                 throw new DomainException($"Invalid argument for Role[name]. Entered value: {name}");
-            }
 
             return new(name);
         }

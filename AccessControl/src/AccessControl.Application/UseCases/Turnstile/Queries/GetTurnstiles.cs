@@ -1,6 +1,6 @@
-﻿namespace AccessControl.Application.UseCases.Turnstile.Queries
+﻿using MediatR;
+
+namespace AccessControl.Application.UseCases.Turnstile.Queries
 {
-    class GetTurnstiles
-    {
-    }
+    public sealed record GetTurnstiles : IRequest;
 }

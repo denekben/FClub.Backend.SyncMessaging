@@ -1,6 +1,6 @@
-﻿namespace Management.Application.UseCases.Memberships.Commands
+﻿using MediatR;
+
+namespace Management.Application.UseCases.Memberships.Commands
 {
-    class CreateMembership
-    {
-    }
+    public sealed record CreateMembership : IRequest;
 }

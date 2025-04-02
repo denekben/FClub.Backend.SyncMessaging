@@ -16,12 +16,13 @@ namespace Management.Infrastructure.Data
         public DbSet<Branch> Branches { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Service> Services { get; set; }
+        public DbSet<UserLog> UserLogs { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasDefaultSchema("FClub");
+            modelBuilder.HasDefaultSchema("FClub.Management");
 
             var configuration = new ManagementConfiguration();
 
@@ -35,6 +36,7 @@ namespace Management.Infrastructure.Data
             modelBuilder.ApplyConfiguration<Branch>(configuration);
             modelBuilder.ApplyConfiguration<Client>(configuration);
             modelBuilder.ApplyConfiguration<Service>(configuration);
+            modelBuilder.ApplyConfiguration<UserLog>(configuration);
 
             base.OnModelCreating(modelBuilder);
         }

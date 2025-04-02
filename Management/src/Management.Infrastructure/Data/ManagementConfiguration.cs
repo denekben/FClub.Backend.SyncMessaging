@@ -6,12 +6,12 @@ using System.Text.Json;
 
 namespace Management.Infrastructure.Data
 {
-    public class ManagementConfiguration : IEntityTypeConfiguration<AppUser>,
+    internal sealed class ManagementConfiguration : IEntityTypeConfiguration<AppUser>,
         IEntityTypeConfiguration<Membership>, IEntityTypeConfiguration<SocialGroup>,
         IEntityTypeConfiguration<ServiceTariff>, IEntityTypeConfiguration<Role>,
         IEntityTypeConfiguration<Tariff>, IEntityTypeConfiguration<ServiceBranch>,
         IEntityTypeConfiguration<Branch>, IEntityTypeConfiguration<Client>,
-        IEntityTypeConfiguration<Service>
+        IEntityTypeConfiguration<Service>, IEntityTypeConfiguration<UserLog>
     {
         public void Configure(EntityTypeBuilder<AppUser> builder)
         {
@@ -170,6 +170,13 @@ namespace Management.Infrastructure.Data
             builder.HasKey(s => s.Id);
 
             builder.ToTable("Services");
+        }
+
+        public void Configure(EntityTypeBuilder<UserLog> builder)
+        {
+            builder.HasKey(ul => ul.Id);
+
+            builder.ToTable("UserLogs");
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace Management.Domain.Entities
+﻿using FClub.Backend.Common.Exceptions;
+
+namespace Management.Domain.Entities
 {
     public sealed class Membership
     {

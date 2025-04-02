@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
 
 namespace Management.Application.UseCases.Clients.Commands
 {
-    class DeleteClient
-    {
-    }
+    public sealed record DeleteClient : IRequest;
 }

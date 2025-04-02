@@ -1,6 +1,6 @@
-﻿namespace AccessControl.Application.UseCases.ClientLogs.Queries
+﻿using MediatR;
+
+namespace AccessControl.Application.UseCases.ClientLogs.Queries
 {
-    class GetLogsByClientId
-    {
-    }
+    public sealed record GetLogsByClientId : IRequest;
 }

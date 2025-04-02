@@ -1,4 +1,5 @@
-﻿using Management.Domain.ValueObjects;
+﻿using FClub.Backend.Common.Exceptions;
+using FClub.Backend.Common.ValueObjects;
 using System.Text.RegularExpressions;
 
 namespace Management.Domain.Entities

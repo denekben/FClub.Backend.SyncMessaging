@@ -1,4 +1,6 @@
-﻿namespace Management.Domain.Entities.Pivots
+﻿using FClub.Backend.Common.Exceptions;
+
+namespace Management.Domain.Entities.Pivots
 {
     public sealed class ServiceBranch
     {
