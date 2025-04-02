@@ -5,11 +5,11 @@ namespace Management.Domain.Entities
     public sealed class UserLog
     {
         public Guid Id { get; init; }
-        public Guid AppUserId { get; private set; }
-        public AppUser AppUser { get; private set; }
-        public string Text { get; private set; }
-        public DateTime CreatedDate { get; private set; }
-        public DateTime UpdatedDate { get; private set; }
+        public Guid AppUserId { get; set; }
+        public AppUser AppUser { get; set; }
+        public string Text { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public DateTime UpdatedDate { get; set; }
 
         private UserLog() { }
 

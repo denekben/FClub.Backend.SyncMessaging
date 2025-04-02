@@ -10,19 +10,19 @@ namespace Management.Domain.Entities
         private readonly static Regex _emailPattern = new(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$", RegexOptions.IgnoreCase);
 
         public Guid Id { get; init; }
-        public FullName FullName { get; private set; }
-        public string? Phone { get; private set; }
-        public string Email { get; private set; }
-        public string PasswordHash { get; private set; }
-        public bool IsBlocked { get; private set; }
-        public bool AllowEntry { get; private set; }
-        public string? RefreshToken { get; private set; }
-        public DateTime RefreshTokenExpires { get; private set; }
-        public Guid RoleId { get; private set; }
-        public Role Role { get; private set; }
+        public FullName FullName { get; set; }
+        public string? Phone { get; set; }
+        public string Email { get; set; }
+        public string PasswordHash { get; set; }
+        public bool IsBlocked { get; set; }
+        public bool AllowEntry { get; set; }
+        public string? RefreshToken { get; set; }
+        public DateTime RefreshTokenExpires { get; set; }
+        public Guid RoleId { get; set; }
+        public Role Role { get; set; }
 
         public DateTime CreatedDate { get; init; }
-        public DateTime? UpdatedDate { get; private set; }
+        public DateTime? UpdatedDate { get; set; }
 
         private AppUser() { }
 

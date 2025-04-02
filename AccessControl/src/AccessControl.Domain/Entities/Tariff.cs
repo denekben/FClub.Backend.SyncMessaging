@@ -6,13 +6,13 @@ namespace AccessControl.Domain.Entities
     public sealed class Tariff
     {
         public Guid Id { get; init; }
-        public string Name { get; private set; }
-        public bool AllowMultiBranches { get; private set; }
-        public List<ServiceTariff> ServiceTariffs { get; private set; } = [];
-        public List<Membership> Memberships { get; private set; } = [];
+        public string Name { get; set; }
+        public bool AllowMultiBranches { get; set; }
+        public List<ServiceTariff> ServiceTariffs { get; set; } = [];
+        public List<Membership> Memberships { get; set; } = [];
 
         public DateTime CreatedDate { get; init; }
-        public DateTime? UpdatedDate { get; private set; }
+        public DateTime? UpdatedDate { get; set; }
 
         private Tariff() { }
 

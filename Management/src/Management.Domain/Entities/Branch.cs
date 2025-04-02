@@ -6,12 +6,12 @@ namespace Management.Domain.Entities
     public sealed class Branch
     {
         public Guid Id { get; init; }
-        public string? Name { get; private set; }
-        public Address Address { get; private set; }
-        public List<ServiceBranch> ServiceBranches { get; private set; } = [];
+        public string? Name { get; set; }
+        public Address Address { get; set; }
+        public List<ServiceBranch> ServiceBranches { get; set; } = [];
 
         public DateTime CreatedDate { get; init; }
-        public DateTime? UpdatedDate { get; private set; }
+        public DateTime? UpdatedDate { get; set; }
 
         private Branch() { }
 

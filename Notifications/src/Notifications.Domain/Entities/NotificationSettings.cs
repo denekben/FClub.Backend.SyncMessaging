@@ -6,18 +6,18 @@ namespace Notifications.Domain.Entities
     {
         public Guid Id { get; init; }
 
-        public bool AllowAttendanceNotifications { get; private set; }
-        public uint AttendanceNotificationPeriod { get; private set; }
-        public Guid? AttendanceNotificationId { get; private set; }
-        public Notification? AttendanceNotification { get; private set; }
+        public bool AllowAttendanceNotifications { get; set; }
+        public uint AttendanceNotificationPeriod { get; set; }
+        public Guid? AttendanceNotificationId { get; set; }
+        public Notification? AttendanceNotification { get; set; }
 
-        public bool AllowTariffNotifications { get; private set; }
-        public Guid? TariffNotificationId { get; private set; }
-        public Notification? TariffNotification { get; private set; }
+        public bool AllowTariffNotifications { get; set; }
+        public Guid? TariffNotificationId { get; set; }
+        public Notification? TariffNotification { get; set; }
 
-        public bool AllowBranchfNotifications { get; private set; }
-        public Guid? BranchNotificationId { get; private set; }
-        public Notification? BranchNotification { get; private set; }
+        public bool AllowBranchfNotifications { get; set; }
+        public Guid? BranchNotificationId { get; set; }
+        public Notification? BranchNotification { get; set; }
 
         private NotificationSettings() { }
 

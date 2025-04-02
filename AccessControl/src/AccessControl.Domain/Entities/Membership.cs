@@ -5,14 +5,14 @@ namespace AccessControl.Domain.Entities
     public sealed class Membership
     {
         public Guid Id { get; init; }
-        public Guid TariffId { get; private set; }
-        public Tariff Tariff { get; private set; }
-        public DateTime ExpiresDate { get; private set; }
-        public Guid ClientId { get; private set; }
-        public Client Client { get; private set; }
+        public Guid TariffId { get; set; }
+        public Tariff Tariff { get; set; }
+        public DateTime ExpiresDate { get; set; }
+        public Guid ClientId { get; set; }
+        public Client Client { get; set; }
 
         public DateTime CreatedDate { get; init; }
-        public DateTime? UpdatedDate { get; private set; }
+        public DateTime? UpdatedDate { get; set; }
 
         private Membership(Guid id, Guid tariffId, DateTime expiresDate, Guid clientId)
         {

@@ -2,5 +2,5 @@
 
 namespace Management.Application.UseCases.AppUsers.Commands
 {
-    public sealed record RefreshExpiredToken : IRequest;
+    public sealed record RefreshExpiredToken(string RefreshToken) : IRequest<string?>;
 }

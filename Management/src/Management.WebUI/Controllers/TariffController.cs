@@ -1,6 +1,9 @@
-﻿namespace Management.WebUI.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace Management.WebUI.Controllers
 {
-    public class TariffController
+    [ApiController]
+    public class TariffController : ControllerBase
     {
     }
 }

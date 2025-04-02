@@ -10,17 +10,17 @@ namespace AccessControl.Domain.Entities
         private readonly static Regex _emailPattern = new(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$", RegexOptions.IgnoreCase);
 
         public Guid Id { get; init; }
-        public FullName FullName { get; private set; }
-        public string? Phone { get; private set; }
-        public string Email { get; private set; }
-        public bool AllowEntry { get; private set; }
-        public bool IsStaff { get; private set; }
-        public Guid? MembershipId { get; private set; }
-        public Membership? Membership { get; private set; }
-        public List<EntryLog> EntryLogs { get; private set; } = [];
+        public FullName FullName { get; set; }
+        public string? Phone { get; set; }
+        public string Email { get; set; }
+        public bool AllowEntry { get; set; }
+        public bool IsStaff { get; set; }
+        public Guid? MembershipId { get; set; }
+        public Membership? Membership { get; set; }
+        public List<EntryLog> EntryLogs { get; set; } = [];
 
         public DateTime CreatedDate { get; init; }
-        public DateTime? UpdatedDate { get; private set; }
+        public DateTime? UpdatedDate { get; set; }
 
         private Client() { }
 

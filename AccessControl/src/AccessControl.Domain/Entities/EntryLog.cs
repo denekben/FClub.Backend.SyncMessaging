@@ -5,11 +5,11 @@ namespace AccessControl.Domain.Entities
     public sealed class EntryLog
     {
         public Guid Id { get; init; }
-        public Guid ClientId { get; private set; }
-        public Client Client { get; private set; }
-        public string Text { get; private set; }
-        public DateTime CreatedDate { get; private set; }
-        public DateTime UpdatedDate { get; private set; }
+        public Guid ClientId { get; set; }
+        public Client Client { get; set; }
+        public string Text { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public DateTime UpdatedDate { get; set; }
 
         private EntryLog() { }
 

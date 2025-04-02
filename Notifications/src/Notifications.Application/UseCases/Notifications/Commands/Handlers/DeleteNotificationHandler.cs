@@ -1,6 +1,8 @@
-﻿namespace Notifications.Application.UseCases.Notifications.Commands.Handlers
+﻿using MediatR;
+
+namespace Notifications.Application.UseCases.Notifications.Commands.Handlers
 {
-    public sealed class DeleteNotificationHandler
+    public sealed class DeleteNotificationHandler : IRequestHandler<DeleteNotification>
     {
     }
 }

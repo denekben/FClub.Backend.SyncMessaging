@@ -7,13 +7,13 @@ namespace AccessControll.Domain.Entities
     public sealed class Service
     {
         public Guid Id { get; init; }
-        public string Name { get; private set; }
-        public List<ServiceTariff> ServiceTariffs { get; private set; } = [];
-        public List<ServiceBranch> ServiceBranches { get; private set; } = [];
-        public List<Turnstile> Turnstiles { get; private set; } = [];
+        public string Name { get; set; }
+        public List<ServiceTariff> ServiceTariffs { get; set; } = [];
+        public List<ServiceBranch> ServiceBranches { get; set; } = [];
+        public List<Turnstile> Turnstiles { get; set; } = [];
 
         public DateTime CreatedDate { get; init; }
-        public DateTime? UpdatedDate { get; private set; }
+        public DateTime? UpdatedDate { get; set; }
 
         private Service() { }
 

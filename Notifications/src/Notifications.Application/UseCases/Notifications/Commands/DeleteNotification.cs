@@ -1,6 +1,6 @@
-﻿namespace Notifications.Application.UseCases.Notifications.Commands
+﻿using MediatR;
+
+namespace Notifications.Application.UseCases.Notifications.Commands
 {
-    public sealed record DeleteNotification
-    {
-    }
+    public sealed record DeleteNotification : IRequest;
 }

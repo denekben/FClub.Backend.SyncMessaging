@@ -6,14 +6,14 @@ namespace AccessControl.Domain.Entities
     public sealed class Turnstile
     {
         public Guid Id { get; init; }
-        public string? Name { get; private set; }
-        public Guid BranchId { get; private set; }
-        public Branch Branch { get; private set; }
-        public Guid ServiceId { get; private set; }
-        public Service Service { get; private set; }
+        public string? Name { get; set; }
+        public Guid BranchId { get; set; }
+        public Branch Branch { get; set; }
+        public Guid ServiceId { get; set; }
+        public Service Service { get; set; }
 
         public DateTime CreatedDate { get; init; }
-        public DateTime? UpdatedDate { get; private set; }
+        public DateTime? UpdatedDate { get; set; }
 
         private Turnstile() { }
 

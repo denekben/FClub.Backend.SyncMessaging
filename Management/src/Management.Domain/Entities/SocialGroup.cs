@@ -5,10 +5,10 @@ namespace Management.Domain.Entities
     public sealed class SocialGroup
     {
         public Guid Id { get; init; }
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         public DateTime CreatedDate { get; init; }
-        public DateTime? UpdatedDate { get; private set; }
+        public DateTime? UpdatedDate { get; set; }
 
         private SocialGroup() { }
 

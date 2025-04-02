@@ -5,11 +5,11 @@ namespace Notifications.Domain.Entities
     public sealed class Notification
     {
         public Guid Id { get; init; }
-        public string Title { get; private set; }
-        public string Text { get; private set; }
+        public string Title { get; set; }
+        public string Text { get; set; }
 
         public DateTime CreatedDate { get; init; }
-        public DateTime? UpdatedDate { get; private set; }
+        public DateTime? UpdatedDate { get; set; }
 
         private Notification() { }
 

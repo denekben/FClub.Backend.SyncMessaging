@@ -6,9 +6,9 @@ namespace Management.Domain.Entities.Pivots
     {
         public Guid Id { get; init; }
         public Guid ServiceId { get; init; }
-        public Service Service { get; private set; }
+        public Service Service { get; set; }
         public Guid TariffId { get; init; }
-        public Tariff Tariff { get; private set; }
+        public Tariff Tariff { get; set; }
 
         private ServiceTariff() { }
 
