@@ -29,5 +29,13 @@ namespace Management.Domain.Entities
 
             return new(name, address);
         }
+
+        public void UpdateDetails(string? name, string? country, string? city, string? street, string? houseNumber)
+        {
+            var address = Address.Create(country, city, street, houseNumber);
+
+            Name = name;
+            Address = address;
+        }
     }
 }
