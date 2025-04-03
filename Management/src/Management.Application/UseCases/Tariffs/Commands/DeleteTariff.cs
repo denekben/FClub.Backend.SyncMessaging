@@ -2,5 +2,5 @@
 
 namespace Management.Application.UseCases.Tariffs.Commands
 {
-    public sealed record DeleteTariff : IRequest;
+    public sealed record DeleteTariff(Guid Id) : IRequest;
 }
