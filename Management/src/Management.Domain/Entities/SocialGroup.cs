@@ -26,5 +26,13 @@ namespace Management.Domain.Entities
 
             return new(name);
         }
+
+        public void UpdateDetails(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+                throw new DomainException($"Invalid argument for Service[name]. Entered value: {name}");
+
+            Name = name;
+        }
     }
 }

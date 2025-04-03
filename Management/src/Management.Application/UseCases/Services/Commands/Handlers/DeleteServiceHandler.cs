@@ -1,4 +1,5 @@
-﻿using Management.Domain.Repositories;
+﻿using FClub.Backend.Common.Exceptions;
+using Management.Domain.Repositories;
 using MediatR;
 
 namespace Management.Application.UseCases.Services.Commands.Handlers
@@ -16,6 +17,8 @@ namespace Management.Application.UseCases.Services.Commands.Handlers
 
         public async Task Handle(DeleteService command, CancellationToken cancellationToken)
         {
+            var service = await _serviceRepository.GetAsync(command.Id)
+                ?? throw new NotFoundException($"Cannot find service {command.Id}");
             await _serviceRepository.DeleteAsync(command.Id);
             await _repository.SaveChangesAsync();
         }

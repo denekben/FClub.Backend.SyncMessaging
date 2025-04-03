@@ -2,5 +2,5 @@
 
 namespace Management.Application.UseCases.SocialGroups.Commands
 {
-    public sealed record DeleteSocialGroup : IRequest;
+    public sealed record DeleteSocialGroup(Guid Id) : IRequest;
 }
