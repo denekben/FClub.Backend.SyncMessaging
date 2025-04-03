@@ -2,23 +2,20 @@
 using FClub.Backend.Common.Services;
 using Management.Domain.Repositories;
 using MediatR;
-using Microsoft.Extensions.Logging;
 
 namespace Management.Application.UseCases.AppUsers.Commands.Handlers
 {
     public sealed class AssignUserToRoleHandler : IRequestHandler<AssignUserToRole>
     {
-        private readonly ILogger<AssignUserToRoleHandler> _logger;
         private readonly IRoleRepository _roleRepository;
         private readonly IUserRepository _userRepository;
         private readonly IHttpContextService _contextService;
         private readonly IRepository _repository;
 
         public AssignUserToRoleHandler(
-            ILogger<AssignUserToRoleHandler> logger, IRoleRepository roleRepository, IUserRepository userRepository, IHttpContextService contextService,
+            IRoleRepository roleRepository, IUserRepository userRepository, IHttpContextService contextService,
             IRepository repository)
         {
-            _logger = logger;
             _roleRepository = roleRepository;
             _userRepository = userRepository;
             _contextService = contextService;
@@ -46,8 +43,6 @@ namespace Management.Application.UseCases.AppUsers.Commands.Handlers
 
             await _userRepository.UpdateAsync(user);
             await _repository.SaveChangesAsync();
-
-            _logger.LogInformation($"User {userId} changed role to {roleId}");
         }
     }
 }

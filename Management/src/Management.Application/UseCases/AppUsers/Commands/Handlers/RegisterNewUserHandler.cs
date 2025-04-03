@@ -5,13 +5,11 @@ using Management.Domain.Entities;
 using Management.Domain.Repositories;
 using Management.Shared.DTOs;
 using MediatR;
-using Microsoft.Extensions.Logging;
 
 namespace Management.Application.UseCases.AppUsers.Commands.Handlers
 {
     public sealed class RegisterNewUserHandler : IRequestHandler<RegisterNewUser, TokensDto?>
     {
-        private readonly ILogger<RegisterNewUserHandler> _logger;
         private readonly ITokenService _tokenService;
         private readonly IPasswordService _passwordService;
         private readonly IUserRepository _userRepository;
@@ -20,11 +18,10 @@ namespace Management.Application.UseCases.AppUsers.Commands.Handlers
         private readonly IRepository _repository;
 
         public RegisterNewUserHandler(
-            ILogger<RegisterNewUserHandler> logger, ITokenService tokenService,
+            ITokenService tokenService,
             IPasswordService passwordService, IRoleRepository roleRepository, IRepository repository,
             IUserRepository userRepository, IClientRepository clientRepository)
         {
-            _logger = logger;
             _tokenService = tokenService;
             _passwordService = passwordService;
             _roleRepository = roleRepository;
@@ -56,8 +53,6 @@ namespace Management.Application.UseCases.AppUsers.Commands.Handlers
             await _clientRepository.AddAsync(Client.Create(user.Id, firstName, secondName, patronymic, phone, email, true, false, null));
 
             await _repository.SaveChangesAsync();
-
-            _logger.LogInformation($"User {user.Id} registered");
 
             return new(accessToken, refreshToken);
         }
