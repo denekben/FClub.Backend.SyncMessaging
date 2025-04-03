@@ -1,4 +1,5 @@
 ﻿using FClub.Backend.Common.Exceptions;
+using Management.Domain.Entities;
 using Management.Domain.Entities.Pivots;
 using Management.Domain.Repositories;
 using Management.Shared.DTOs;
@@ -23,27 +24,39 @@ namespace Management.Application.UseCases.Branches.Commands.Handlers
 
         public async Task<BranchDto?> Handle(UpdateBranch command, CancellationToken cancellationToken)
         {
-            var (branchId, name, country, city, street, houseNumber, servicesIds) = command;
+            var (branchId, name, country, city, street, houseNumber, serviceNames) = command;
 
-            var branch = await _branchRepository.GetAsync(branchId, BranchIncludes.ServiceBranches)
+            var branch = await _branchRepository.GetAsync(branchId, BranchIncludes.ServiceBranches | BranchIncludes.Services)
                 ?? throw new NotFoundException($"Cannot find {branchId}");
 
             branch.UpdateDetails(name, country, city, street, houseNumber);
 
-            if (!await _serviceRepository.AllExists(servicesIds))
-                throw new NotFoundException($"Cannot find services");
+            var serviceNamesToDelete = branch.ServiceBranches.Select(sb => sb.Service.Name).Except(serviceNames).ToList();
+            var serviceNamesToAdd = serviceNames.Except(branch.ServiceBranches.Select(sb => sb.Service.Name)).ToList();
 
-            var servicesIdsToDelete = branch.ServiceBranches.Select(sb => sb.ServiceId).Except(servicesIds).ToList();
-            var servicesIdsToAdd = servicesIds.Except(branch.ServiceBranches.Select(sb => sb.ServiceId)).ToList();
-
-            foreach (var serviceId in servicesIdsToAdd)
+            foreach (var serviceName in serviceNamesToAdd)
             {
-                branch.ServiceBranches.Add(ServiceBranch.Create(serviceId, branch.Id));
+                var service = await _serviceRepository.GetByNameAsync(serviceName);
+                if (service == null)
+                {
+                    service = Service.Create(serviceName);
+                    await _serviceRepository.AddAsync(service);
+                }
+                branch.ServiceBranches.Add(ServiceBranch.Create(service.Id, branch.Id));
             }
 
-            foreach (var serviceId in servicesIdsToDelete)
+            await _serviceRepository.DeleteOneBranchServicesByNameAsync(serviceNamesToDelete, branch.Id);
+            foreach (var serviceName in serviceNamesToDelete)
             {
-                branch.ServiceBranches.Remove(branch.ServiceBranches.First(sb => sb.ServiceId == serviceId));
+                var service = await _serviceRepository.GetByNameAsync(serviceName);
+                if (service != null)
+                {
+                    var serviceBranchToRemove = branch.ServiceBranches.FirstOrDefault(sb => sb.ServiceId == service.Id);
+                    if (serviceBranchToRemove != null)
+                    {
+                        branch.ServiceBranches.Remove(serviceBranchToRemove);
+                    }
+                }
             }
 
             await _branchRepository.UpdateAsync(branch);

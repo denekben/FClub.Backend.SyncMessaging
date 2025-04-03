@@ -1,6 +1,7 @@
-﻿using MediatR;
+﻿using Management.Shared.DTOs;
+using MediatR;
 
 namespace Management.Application.UseCases.Services.Commands
 {
-    public sealed record CreateService : IRequest;
+    public sealed record CreateService(string Name) : IRequest<ServiceDto?>;
 }

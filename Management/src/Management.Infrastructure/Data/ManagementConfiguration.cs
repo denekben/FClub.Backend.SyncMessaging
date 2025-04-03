@@ -3,6 +3,7 @@ using Management.Domain.Entities.Pivots;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System.Text.Json;
+using DomainService = Management.Domain.Entities.Service;
 
 namespace Management.Infrastructure.Data
 {
@@ -11,7 +12,7 @@ namespace Management.Infrastructure.Data
         IEntityTypeConfiguration<ServiceTariff>, IEntityTypeConfiguration<Role>,
         IEntityTypeConfiguration<Tariff>, IEntityTypeConfiguration<ServiceBranch>,
         IEntityTypeConfiguration<Branch>, IEntityTypeConfiguration<Client>,
-        IEntityTypeConfiguration<Service>, IEntityTypeConfiguration<UserLog>
+        IEntityTypeConfiguration<DomainService>, IEntityTypeConfiguration<UserLog>
     {
         public void Configure(EntityTypeBuilder<AppUser> builder)
         {
@@ -165,7 +166,7 @@ namespace Management.Infrastructure.Data
             builder.ToTable("Clients");
         }
 
-        public void Configure(EntityTypeBuilder<Service> builder)
+        public void Configure(EntityTypeBuilder<DomainService> builder)
         {
             builder.HasKey(s => s.Id);
 

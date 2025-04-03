@@ -9,6 +9,6 @@ namespace Management.Application.UseCases.Branches.Commands
         string? City,
         string? Street,
         string? HouseNumber,
-        List<Guid> servicesIds
+        List<string> serviceNames
     ) : IRequest<BranchDto?>;
 }

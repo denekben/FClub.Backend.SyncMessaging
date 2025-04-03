@@ -27,11 +27,11 @@ namespace Management.Application.UseCases.Branches.Commands.Handlers
 
             var branch = Branch.Create(name, country, city, street, houseNumber);
 
+            if (!await _serviceRepository.AllExists(servicesIds))
+                throw new NotFoundException($"Cannot find services");
+
             foreach (var serviceId in servicesIds)
             {
-                if (await _serviceRepository.GetAsync(serviceId) == null)
-                    throw new NotFoundException($"Cannot find service {serviceId}");
-
                 branch.ServiceBranches.Add(ServiceBranch.Create(serviceId, branch.Id));
             }
 
