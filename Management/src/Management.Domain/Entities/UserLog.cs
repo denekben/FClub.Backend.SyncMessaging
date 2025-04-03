@@ -23,8 +23,6 @@ namespace Management.Domain.Entities
 
         public static UserLog Create(Guid appUserId, string text)
         {
-            if (appUserId == Guid.Empty)
-                throw new DomainException($"Invalid argument for UserLog[appUserId]. Entered value: {appUserId}");
             if (string.IsNullOrWhiteSpace(text))
                 throw new DomainException($"Invalid argument for UserLog[text]. Entered value: {text}");
 

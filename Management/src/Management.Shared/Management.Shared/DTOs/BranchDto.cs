@@ -1,6 +1,4 @@
 ﻿namespace Management.Shared.DTOs
 {
-    public sealed record BranchDto
-    {
-    }
+    public sealed record BranchDto();
 }

@@ -4,21 +4,18 @@ using Management.Domain.Entities.Pivots;
 using Management.Domain.Repositories;
 using Management.Shared.DTOs;
 using MediatR;
-using Microsoft.Extensions.Logging;
 
 namespace Management.Application.UseCases.Branches.Commands.Handlers
 {
     public sealed class CreateBranchHandler : IRequestHandler<CreateBranch, BranchDto?>
     {
-        private readonly ILogger<CreateBranchHandler> _logger;
         private readonly IServiceRepository _serviceRepository;
         private readonly IBranchRepository _branchRepository;
         private readonly IRepository _repository;
 
         public CreateBranchHandler(
-            ILogger<CreateBranchHandler> logger, IServiceRepository serviceRepository, IBranchRepository branchRepository, IRepository repository)
+            IServiceRepository serviceRepository, IBranchRepository branchRepository, IRepository repository)
         {
-            _logger = logger;
             _serviceRepository = serviceRepository;
             _branchRepository = branchRepository;
             _repository = repository;
@@ -40,7 +37,6 @@ namespace Management.Application.UseCases.Branches.Commands.Handlers
 
             await _branchRepository.AddAsync(branch);
             await _repository.SaveChangesAsync();
-            _logger.LogInformation($"Branch {branch.Id} created");
 
             return branch.AsDto();
         }

@@ -2,5 +2,7 @@
 
 namespace Management.Application.UseCases.Memberships.Commands
 {
-    public sealed record DeleteMembership : IRequest;
+    public sealed record DeleteMembership(
+        Guid ClientId
+    ) : IRequest;
 }

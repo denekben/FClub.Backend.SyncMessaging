@@ -4,23 +4,19 @@ using Management.Domain.Entities;
 using Management.Domain.Repositories;
 using Management.Shared.DTOs;
 using MediatR;
-using Microsoft.Extensions.Logging;
 
 namespace Management.Application.UseCases.Clients.Commands.Handlers
 {
     public sealed class UpdateClientHandler : IRequestHandler<UpdateClient, ClientDto?>
     {
-        private readonly ILogger<UpdateClientHandler> _logger;
         private readonly IClientRepository _clientRepository;
         private readonly IUserRepository _userRepository;
         private readonly IHttpContextService _contextService;
         private readonly IRepository _repository;
 
         public UpdateClientHandler(
-            ILogger<UpdateClientHandler> logger, IClientRepository clientRepository,
-            IUserRepository userRepository, IRepository repository, IHttpContextService contextService)
+            IClientRepository clientRepository, IUserRepository userRepository, IRepository repository, IHttpContextService contextService)
         {
-            _logger = logger;
             _clientRepository = clientRepository;
             _userRepository = userRepository;
             _repository = repository;
@@ -48,8 +44,6 @@ namespace Management.Application.UseCases.Clients.Commands.Handlers
 
             await _clientRepository.UpdateAsync(updatingClient);
             await _repository.SaveChangesAsync();
-
-            _logger.LogInformation($"Client {updatingClient.Id} updated");
 
             return updatingClient.AsDto();
         }
