@@ -4,23 +4,20 @@ using Management.Application.Services;
 using Management.Domain.Repositories;
 using Management.Shared.DTOs;
 using MediatR;
-using Microsoft.Extensions.Logging;
 
 namespace Management.Application.UseCases.AppUsers.Commands.Handlers
 {
     public sealed class SignInHandler : IRequestHandler<SignIn, TokensDto?>
     {
-        private readonly ILogger<SignInHandler> _logger;
         private readonly IUserRepository _userRepository;
         private readonly IPasswordService _passwordService;
         private readonly ITokenService _tokenService;
         private readonly IRepository _repository;
 
         public SignInHandler(
-            ILogger<SignInHandler> logger, IUserRepository userRepository, IPasswordService passwordService,
+            IUserRepository userRepository, IPasswordService passwordService,
             ITokenService tokenService, IRepository repository)
         {
-            _logger = logger;
             _userRepository = userRepository;
             _passwordService = passwordService;
             _tokenService = tokenService;
@@ -46,7 +43,6 @@ namespace Management.Application.UseCases.AppUsers.Commands.Handlers
 
             await _userRepository.UpdateAsync(user);
             await _repository.SaveChangesAsync();
-            _logger.LogInformation($"User {user.Id} signed in");
 
             return new(accessToken, refreshToken);
         }

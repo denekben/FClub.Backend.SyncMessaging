@@ -9,7 +9,6 @@ namespace Management.Domain.Repositories
         Task AddAsync(Branch branch);
         Task UpdateAsync(Branch branch);
         Task DeleteAsync(Guid id);
-        Task SaveChangesAsync();
     }
 
     [Flags]

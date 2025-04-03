@@ -58,7 +58,7 @@ namespace Management.Application.UseCases.UserLogs
             {
                 stopwatch.Stop();
 
-                logText = $"[MediatR] Error handling {requestName} after {stopwatch.ElapsedMilliseconds}ms.";
+                logText = $"[MediatR] Error handling {requestName} after {stopwatch.ElapsedMilliseconds}ms. Error message: {ex.Message}.";
                 _logger.LogError(logText);
                 await _userLogRepository.AddAsync(UserLog.Create(userId, logText));
                 await _repository.SaveChangesAsync();

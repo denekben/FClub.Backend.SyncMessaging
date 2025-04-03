@@ -34,5 +34,21 @@ namespace Management.Domain.Entities
 
             return new(tariffId, expiresDate, clientId);
         }
+
+        public void UpdateDetails(Guid id, Guid tariffId, DateTime expiresDate, Guid clientId)
+        {
+            if (id == Guid.Empty)
+                throw new DomainException($"Invalid value for Membership[id]. Entered value {id}");
+            if (tariffId == Guid.Empty)
+                throw new DomainException($"Invalid value for Membership[tariffId]. Entered value {tariffId}");
+            if (clientId == Guid.Empty)
+                throw new DomainException($"Invalid value for Membership[clientId]. Entered value {clientId}");
+            if (expiresDate <= DateTime.UtcNow)
+                throw new DomainException($"Invalid value for Membership[expiresDate]. Entered value {expiresDate}");
+
+            TariffId = tariffId;
+            ExpiresDate = expiresDate;
+            ClientId = clientId;
+        }
     }
 }
