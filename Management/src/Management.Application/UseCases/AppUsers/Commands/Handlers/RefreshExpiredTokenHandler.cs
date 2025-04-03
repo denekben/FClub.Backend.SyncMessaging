@@ -12,17 +12,15 @@ namespace Management.Application.UseCases.AppUsers.Commands.Handlers
         private readonly IUserRepository _userRepository;
         private readonly ITokenService _tokenService;
         private readonly IHttpContextService _contextService;
-        private readonly IRoleRepository _roleRepository;
 
         public RefreshExpiredTokenHandler(
             ILogger<RefreshExpiredTokenHandler> logger, IUserRepository userRepository, ITokenService tokenService,
-            IHttpContextService contextService, IRoleRepository roleRepository)
+            IHttpContextService contextService)
         {
             _logger = logger;
             _userRepository = userRepository;
             _tokenService = tokenService;
             _contextService = contextService;
-            _roleRepository = roleRepository;
         }
 
         public async Task<string?> Handle(RefreshExpiredToken command, CancellationToken cancellationToken)
@@ -30,7 +28,7 @@ namespace Management.Application.UseCases.AppUsers.Commands.Handlers
             var userId = _contextService.GetCurrentUserId()
                 ?? throw new BadRequestException("Invalid authorization header");
 
-            var user = await _userRepository.GetAsync(userId)
+            var user = await _userRepository.GetAsync(userId, UserIncludes.Role)
                 ?? throw new NotFoundException($"Cannot find user {userId}");
 
             if (user.RefreshTokenExpires < DateTime.UtcNow)
@@ -38,10 +36,7 @@ namespace Management.Application.UseCases.AppUsers.Commands.Handlers
             if (user.RefreshToken != command.RefreshToken)
                 throw new BadRequestException("Incorrect refresh token");
 
-            var role = await _roleRepository.GetAsync(user.RoleId)
-                ?? throw new NotFoundException($"Cannot find role {user.RoleId}");
-
-            var token = _tokenService.GenerateAccessToken(user.Id, user.FullName.FirstName, user.FullName.SecondName, user.FullName.Patronymic, user.Email, role.Name);
+            var token = _tokenService.GenerateAccessToken(user.Id, user.FullName.FirstName, user.FullName.SecondName, user.FullName.Patronymic, user.Email, user.Role.Name);
 
             _logger.LogInformation($"User {user.Id} refreshed token");
             return token;

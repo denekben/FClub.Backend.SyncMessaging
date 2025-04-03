@@ -35,6 +35,18 @@ namespace Management.Domain.Entities
             CreatedDate = DateTime.UtcNow;
         }
 
+        private Client(Guid id, FullName fullName, string? phone, string email, bool allowEntry, bool allowNotifications, Guid? membershipId)
+        {
+            Id = id;
+            FullName = fullName;
+            Phone = phone;
+            Email = email;
+            AllowEntry = allowEntry;
+            AllowNotifications = allowNotifications;
+            MembershipId = membershipId;
+            CreatedDate = DateTime.UtcNow;
+        }
+
         public static Client Create(string firstName, string secondName, string? patronymic,
             string? phone, string email, bool allowEntry, bool allowNotifications, Guid? membershipId)
         {
@@ -48,6 +60,47 @@ namespace Management.Domain.Entities
                 throw new DomainException($"Invalid value for Client[membershipId]. Entered value {membershipId}");
 
             return new(fullName, phone, email, allowEntry, allowNotifications, membershipId);
+        }
+
+        public static Client Create(Guid id, string firstName, string secondName, string? patronymic,
+            string? phone, string email, bool allowEntry, bool allowNotifications, Guid? membershipId)
+        {
+            if (id == Guid.Empty)
+                throw new DomainException($"Invalid value for Client[id]. Entered value {id}");
+
+            var fullName = FullName.Create(firstName, secondName, patronymic);
+
+            if (phone != null && !_phonePattern.IsMatch(phone))
+                throw new DomainException($"Invalid value for Client[phone]. Entered value {phone}");
+            if (string.IsNullOrWhiteSpace(email) || !_emailPattern.IsMatch(email))
+                throw new DomainException($"Invalid value for Client[email]. Entered value {email}");
+            if (membershipId == Guid.Empty)
+                throw new DomainException($"Invalid value for Client[membershipId]. Entered value {membershipId}");
+
+            return new(id, fullName, phone, email, allowEntry, allowNotifications, membershipId);
+        }
+
+        public void UpdateDetails(Guid id, string firstName, string secondName, string? patronymic,
+            string? phone, string email, bool allowEntry, bool allowNotifications, Guid? membershipId)
+        {
+            if (id == Guid.Empty)
+                throw new DomainException($"Invalid value for Client[id]. Entered value {id}");
+
+            var fullName = FullName.Create(firstName, secondName, patronymic);
+
+            if (phone != null && !_phonePattern.IsMatch(phone))
+                throw new DomainException($"Invalid value for Client[phone]. Entered value {phone}");
+            if (string.IsNullOrWhiteSpace(email) || !_emailPattern.IsMatch(email))
+                throw new DomainException($"Invalid value for Client[email]. Entered value {email}");
+            if (membershipId == Guid.Empty)
+                throw new DomainException($"Invalid value for Client[membershipId]. Entered value {membershipId}");
+
+            FullName = fullName;
+            Phone = phone;
+            Email = email;
+            AllowEntry = allowEntry;
+            AllowNotifications = allowNotifications;
+            MembershipId = membershipId;
         }
     }
 }

@@ -13,13 +13,15 @@ namespace Management.Application.UseCases.Branches.Commands.Handlers
         private readonly ILogger<CreateBranchHandler> _logger;
         private readonly IServiceRepository _serviceRepository;
         private readonly IBranchRepository _branchRepository;
+        private readonly IRepository _repository;
 
         public CreateBranchHandler(
-            ILogger<CreateBranchHandler> logger, IServiceRepository serviceRepository, IBranchRepository branchRepository)
+            ILogger<CreateBranchHandler> logger, IServiceRepository serviceRepository, IBranchRepository branchRepository, IRepository repository)
         {
             _logger = logger;
             _serviceRepository = serviceRepository;
             _branchRepository = branchRepository;
+            _repository = repository;
         }
 
         public async Task<BranchDto?> Handle(CreateBranch command, CancellationToken cancellationToken)
@@ -37,7 +39,7 @@ namespace Management.Application.UseCases.Branches.Commands.Handlers
             }
 
             await _branchRepository.AddAsync(branch);
-            await _branchRepository.SaveChangesAsync();
+            await _repository.SaveChangesAsync();
             _logger.LogInformation($"Branch {branch.Id} created");
 
             return branch.AsDto();

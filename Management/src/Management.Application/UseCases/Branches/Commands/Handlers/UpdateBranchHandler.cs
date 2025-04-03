@@ -12,14 +12,17 @@ namespace Management.Application.UseCases.Branches.Commands.Handlers
         private readonly ILogger<UpdateBranchHandler> _logger;
         private readonly IBranchRepository _branchRepository;
         private readonly IServiceRepository _serviceRepository;
+        private readonly IRepository _repository;
 
         public UpdateBranchHandler(
-            ILogger<UpdateBranchHandler> logger, IBranchRepository branchRepository, IServiceRepository serviceRepository
+            ILogger<UpdateBranchHandler> logger, IBranchRepository branchRepository, IServiceRepository serviceRepository,
+            IRepository repository
         )
         {
             _logger = logger;
             _branchRepository = branchRepository;
             _serviceRepository = serviceRepository;
+            _repository = repository;
         }
 
         public async Task<BranchDto?> Handle(UpdateBranch command, CancellationToken cancellationToken)
@@ -48,7 +51,7 @@ namespace Management.Application.UseCases.Branches.Commands.Handlers
             }
 
             await _branchRepository.UpdateAsync(branch);
-            await _branchRepository.SaveChangesAsync();
+            await _repository.SaveChangesAsync();
             _logger.LogInformation($"Branch {branch.Id} updated");
 
             return branch.AsDto();

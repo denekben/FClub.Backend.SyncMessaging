@@ -16,16 +16,21 @@ namespace Management.Application.UseCases.AppUsers.Commands.Handlers
         private readonly IPasswordService _passwordService;
         private readonly IUserRepository _userRepository;
         private readonly IRoleRepository _roleRepository;
+        private readonly IClientRepository _clientRepository;
+        private readonly IRepository _repository;
 
         public RegisterNewUserHandler(
             ILogger<RegisterNewUserHandler> logger, ITokenService tokenService,
-            IPasswordService passwordService, IRoleRepository roleRepository
-        )
+            IPasswordService passwordService, IRoleRepository roleRepository, IRepository repository,
+            IUserRepository userRepository, IClientRepository clientRepository)
         {
             _logger = logger;
             _tokenService = tokenService;
             _passwordService = passwordService;
             _roleRepository = roleRepository;
+            _repository = repository;
+            _userRepository = userRepository;
+            _clientRepository = clientRepository;
         }
 
         public async Task<TokensDto?> Handle(RegisterNewUser command, CancellationToken cancellationToken)
@@ -48,7 +53,9 @@ namespace Management.Application.UseCases.AppUsers.Commands.Handlers
             var accessToken = _tokenService.GenerateAccessToken(user.Id, firstName, secondName, patronymic, email, role.Name);
 
             await _userRepository.AddAsync(user);
-            await _userRepository.SaveChangesAsync();
+            await _clientRepository.AddAsync(Client.Create(user.Id, firstName, secondName, patronymic, phone, email, true, false, null));
+
+            await _repository.SaveChangesAsync();
 
             _logger.LogInformation($"User {user.Id} registered");
 

@@ -12,14 +12,17 @@ namespace Management.Application.UseCases.AppUsers.Commands.Handlers
         private readonly IRoleRepository _roleRepository;
         private readonly IUserRepository _userRepository;
         private readonly IHttpContextService _contextService;
+        private readonly IRepository _repository;
 
         public AssignUserToRoleHandler(
-            ILogger<AssignUserToRoleHandler> logger, IRoleRepository roleRepository, IUserRepository userRepository, IHttpContextService contextService)
+            ILogger<AssignUserToRoleHandler> logger, IRoleRepository roleRepository, IUserRepository userRepository, IHttpContextService contextService,
+            IRepository repository)
         {
             _logger = logger;
             _roleRepository = roleRepository;
             _userRepository = userRepository;
             _contextService = contextService;
+            _repository = repository;
         }
 
         public async Task Handle(AssignUserToRole command, CancellationToken cancellationToken)
@@ -42,7 +45,7 @@ namespace Management.Application.UseCases.AppUsers.Commands.Handlers
             user.RoleId = roleId;
 
             await _userRepository.UpdateAsync(user);
-            await _userRepository.SaveChangesAsync();
+            await _repository.SaveChangesAsync();
 
             _logger.LogInformation($"User {userId} changed role to {roleId}");
         }
